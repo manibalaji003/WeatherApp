@@ -1,0 +1,21 @@
+html{
+  height: 100vh;
+
+}
+*{
+  box-sizing: border-box;
+}
+
+body
+{
+ /* background-image: url('https://media.istockphoto.com/id/536507269/photo/night-sky-with-bright-stars-and-blue-nebula.webp?b=1&s=170667a&w=0&k=20&c=Ds4PS_QR1EnY3siXlny-mfRXDUBDKTo049g2QB3zy1I=');
+  */
+  background-image: url('./assets/preview.jpg');
+ 
+  height: 100vh;
+  background-size: cover; 
+     background-position: center ;
+     position: relative;
+  
+
+}
