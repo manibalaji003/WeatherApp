@@ -60,6 +60,7 @@ function App() {
     <div className='totaldata'>
       <Mainpage firstLoadData={firstData} />
     </div>:<center><div className='error'>ERROR 404  NOT FOUND</div></center>}
+    
     <Footer />
     </>
   );
