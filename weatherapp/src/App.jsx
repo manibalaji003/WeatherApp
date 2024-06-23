@@ -48,7 +48,7 @@ function App() {
             &nbsp;
           <img
               alt=""
-              src="/newlogo.png"
+              src='newlogo.png'
               width="30"
               height="30"
               className="d-inline-block align-top"
@@ -60,7 +60,7 @@ function App() {
     <div className='totaldata'>
       <Mainpage firstLoadData={firstData} />
     </div>:<center><div className='error'>ERROR 404  NOT FOUND</div></center>}
-    
+
     <Footer />
     </>
   );
