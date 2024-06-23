@@ -21,15 +21,17 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./WeatherApp
 
       - name: Build project
         run: npm run build
+        working-directory: ./WeatherApp
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
           name: production-files
-          path: ./dist
+          path: ./WeatherApp/dist
 
   deploy:
     name: Deploy
@@ -45,10 +47,10 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: production-files
-          path: ./dist
+          path: ./WeatherApp/dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./WeatherApp/dist
